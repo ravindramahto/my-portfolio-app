@@ -71,7 +71,12 @@ const Header = () => {
                 {link.text}
               </NavLink>
             ))}
-           
+            <Link 
+              to="/contact"
+              className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-xl hover:from-blue-600 hover:to-blue-700 hover:ring-2 hover:ring-blue-400 hover:ring-opacity-50 active:scale-95 active:translate-y-0 active:shadow-inner"
+            >
+              Hire Me
+            </Link>
           </div>
         </div>
 
@@ -106,6 +111,12 @@ const Header = () => {
                 {link.text}
               </NavLink>
             ))} 
+             <Link 
+              to="/contact"
+              className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-xl hover:from-blue-600 hover:to-blue-700 hover:ring-2 hover:ring-blue-400 hover:ring-opacity-50 active:scale-95 active:translate-y-0 active:shadow-inner"
+            >
+              Hire Me
+            </Link>
           </div>
           
         </div>
