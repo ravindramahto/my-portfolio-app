@@ -7,9 +7,9 @@ class Home extends Component {
                 {/* Hero Section - Adjusted spacing and responsiveness */}
                 <div className="container mx-auto px-4 pt-16 md:pt-24 pb-8 min-h-[90vh] flex items-center">
                     <div className="flex flex-col items-center text-center w-full animate-fadeIn space-y-4 md:space-y-6">
-                        <div className="w-48 h-48 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-green-500 shadow-lg transform hover:scale-105 transition-all duration-300 mb-6">
+                        <div className="w-48 h-48 md:w-28 md:h-28 lg:w-34 lg:h-34 rounded-full overflow-hidden border-4 border-green-500 shadow-lg transform hover:scale-105 transition-all duration-300 mb-6">
                             <img 
-                                src="/profile.jpg" 
+                                src={new URL('../../assets/Ravi.png', import.meta.url).href}
                                 alt="Ravindra Mahto"
                                 className="w-full h-full object-cover scale-30"
                             />
