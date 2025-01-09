@@ -1,7 +1,8 @@
-import React from 'react';
+import { useState } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-gray-800 text-white shadow-lg z-50">
       <nav className="w-full px-6">
@@ -67,9 +68,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
- 
   );
 };
 
 export default Header;
-
