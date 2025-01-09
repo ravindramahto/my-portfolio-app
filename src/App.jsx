@@ -1,16 +1,31 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/Header'
+import Header from './components/Header/Header' 
+import Home from './components/pages/Home'
+import About from './components/pages/About'
+import Skills from './components/pages/Skills'
+import Education from './components/pages/Education'
+import Contact from './components/pages/Contact'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    // <div className="pt-16"> {/* Add padding-top to account for fixed header */}
-    <Header />
-    // {/* Your other content */}
-  // </div>
+      <Router>
+      <div className="pt-16">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
