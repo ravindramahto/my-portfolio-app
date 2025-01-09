@@ -15,10 +15,32 @@ const Header = () => {
       <nav className="w-full px-6">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
+
             <Link to="/" className="text-2xl font-bold font-serif tracking-wider hover:text-blue-400 transition-colors duration-300">
-              <span className="bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
                 <mark className="bg-transparent">
-                  <em>Ravindra</em> <strong>Mahto</strong>
+                  <span className="font-mono text-xl transition-transform duration-300 hover:scale-125 inline-block">{'<'}</span>
+                  <em className="font-sans italic text-2xl bg-gradient-to-r from-orange-400 to-green-500 bg-clip-text text-transparent">
+                    <span className="animate-[blink_1s_ease-in-out_infinite] transition-transform duration-300 hover:scale-150 text-red-500 font-bold text-2xl inline-block font-serif">R</span>
+                    <span className="transition-transform duration-300 hover:scale-150 text-yellow-300 inline-block">a</span>
+                    <span className="transition-transform duration-300 hover:scale-150 text-yellow-300 inline-block">v</span>
+                    <span className="transition-transform duration-300 hover:scale-150 text-yellow-300 inline-block">i</span>
+                    <span className="transition-transform duration-300 hover:scale-150 text-yellow-300 inline-block font-serif">n</span>
+                    <span className="transition-transform duration-300 hover:scale-150 text-yellow-300 inline-block">d</span>
+                    <span className="transition-transform duration-300 hover:scale-150 text-yellow-300 inline-block">r</span>
+                    <span className="transition-transform duration-300 hover:scale-150 text-yellow-300 inline-block">a</span>
+                  </em>
+                  <span className="font-mono text-xl transition-transform duration-300 hover:scale-125 inline-block">{'/>'}</span>
+                  {' '}
+                  <span className="font-mono text-xl transition-transform duration-300 hover:scale-125 inline-block">{'<'}</span>
+                  <strong className="font-sans text-2xl bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent">
+                    <span className="transition-transform duration-300 hover:scale-125 inline-block text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text">M</span>
+                    <span className="transition-transform duration-300 hover:scale-125 inline-block text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text">a</span>
+                    <span className="transition-transform duration-300 hover:scale-125 inline-block text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text">h</span>
+                    <span className="transition-transform duration-300 hover:scale-125 inline-block text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text">t</span>
+                    <span className="transition-transform duration-300 hover:scale-125 inline-block text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text">o</span>
+                  </strong>
+                  <span className="font-mono text-xl transition-transform duration-300 hover:scale-125 inline-block">{'/>'}</span>
                 </mark>
               </span>
             </Link>
@@ -61,19 +83,22 @@ const Header = () => {
             <a href="/services" className="hover:text-gray-300 px-3 py-2 font-medium">Services</a>
             <a href="/contact" className="hover:text-gray-300 px-3 py-2 font-medium">Contact</a> */}
          {navLinks.map((link) => (
+          
               <NavLink 
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) => 
-                  `px-3 py-2 font-medium ${isActive ? 'text-blue-400' : 'hover:text-gray-300'}`
+                  `px-3 py-2 font-medium transition-all duration-300 transform hover:scale-110 ${
+                    isActive ? 'text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text hover:from-orange-600 hover:to-green-600' : 'text-gray-300 hover:text-white'
+                  }`
                 }
               >
-                {link.text}
+                <span className="open">&lt;</span><span className="hover:scale-110 inline-block transition-transform duration-300">{link.text}</span><span className="close">/&gt;</span>
               </NavLink>
             ))}
             <Link 
               to="/contact"
-              className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-xl hover:from-blue-600 hover:to-blue-700 hover:ring-2 hover:ring-blue-400 hover:ring-opacity-50 active:scale-95 active:translate-y-0 active:shadow-inner"
+              className="bg-gradient-to-r from-orange-500 to-green-500 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-xl hover:from-orange-600 hover:to-green-600 hover:ring-2 hover:ring-green-400 hover:ring-opacity-50 active:scale-95 active:translate-y-0 active:shadow-inner"
             >
               Hire Me
             </Link>
