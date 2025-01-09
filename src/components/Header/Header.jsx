@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link,NavLink} from 'react-router-dom'; 
+import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
@@ -10,7 +10,7 @@ const Header = () => {
     { path: '/contact', text: 'Contact' }
   ];
   return (
-    
+
     <header className="fixed top-0 left-0 right-0 bg-gray-800 text-white shadow-lg z-50">
       <nav className="w-full px-6">
         <div className="flex justify-between items-center h-16">
@@ -45,31 +45,31 @@ const Header = () => {
               </span>
             </Link>
           </div>
-          
-          
+
+
           {/* Hamburger Button */}
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 hover:bg-gray-700 rounded"
           >
-            <svg 
-              className="w-6 h-6" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
               {isOpen ? (
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
                   d="M6 18L18 6M6 6l12 12"
                 />
               ) : (
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
@@ -82,21 +82,20 @@ const Header = () => {
             <a href="/about" className="hover:text-gray-300 px-3 py-2 font-medium">About</a>
             <a href="/services" className="hover:text-gray-300 px-3 py-2 font-medium">Services</a>
             <a href="/contact" className="hover:text-gray-300 px-3 py-2 font-medium">Contact</a> */}
-         {navLinks.map((link) => (
-          
-              <NavLink 
+            {navLinks.map((link) => (
+
+              <NavLink
                 key={link.path}
                 to={link.path}
-                className={({ isActive }) => 
-                  `px-3 py-2 font-medium transition-all duration-300 transform hover:scale-110 ${
-                    isActive ? 'text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text hover:from-orange-600 hover:to-green-600' : 'text-gray-300 hover:text-white'
+                className={({ isActive }) =>
+                  `px-3 py-2 font-medium transition-all duration-300 transform hover:scale-110 ${isActive ? 'text-transparent bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text hover:from-orange-600 hover:to-green-600' : 'text-gray-300 hover:text-white'
                   }`
                 }
               >
                 <span className="open">&lt;</span><span className="hover:scale-110 inline-block transition-transform duration-300">{link.text}</span><span className="close">/&gt;</span>
               </NavLink>
             ))}
-            <Link 
+            <Link
               to="/contact"
               className="bg-gradient-to-r from-orange-500 to-green-500 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-xl hover:from-orange-600 hover:to-green-600 hover:ring-2 hover:ring-green-400 hover:ring-opacity-50 active:scale-95 active:translate-y-0 active:shadow-inner"
             >
@@ -123,30 +122,29 @@ const Header = () => {
           </div> */}
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navLinks.map((link) => (
-              <NavLink 
+              <NavLink
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={({ isActive }) => 
-                  `block px-3 py-2 rounded-md font-medium ${
-                    isActive ? 'bg-gray-900 text-white' : 'hover:bg-gray-700 hover:text-white'
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded-md font-medium ${isActive ? 'bg-gray-900 text-white' : 'hover:bg-gray-700 hover:text-white'
                   }`
                 }
               >
                 {link.text}
               </NavLink>
-            ))} 
-             <Link 
+            ))}
+            <Link
               to="/contact"
               className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:translate-y-[-2px] hover:shadow-xl hover:from-blue-600 hover:to-blue-700 hover:ring-2 hover:ring-blue-400 hover:ring-opacity-50 active:scale-95 active:translate-y-0 active:shadow-inner"
             >
               Hire Me
             </Link>
           </div>
-          
         </div>
-      </nav>
-    </header>
+      
+    </nav>
+    </header >
   );
 };
 

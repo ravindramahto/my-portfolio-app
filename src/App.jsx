@@ -8,14 +8,14 @@ import Home from './components/pages/Home'
 import About from './components/pages/About'
 import Skills from './components/pages/Skills'
 import Education from './components/pages/Education'
-import Contact from './components/pages/Contact'
+import Contact from './components/pages/Contact' 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
       <Router>
-      <div className="pt-16">
+      <div className="pt-4">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
