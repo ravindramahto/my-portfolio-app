@@ -7,7 +7,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-     <Header />
+    // <div className="pt-16"> {/* Add padding-top to account for fixed header */}
+    <Header />
+    // {/* Your other content */}
+  // </div>
   )
 }
 
