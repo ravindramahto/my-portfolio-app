@@ -1,4 +1,133 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+
+const ProjectCard = ({ project, index }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+      className="group relative bg-gray-800 rounded-xl overflow-hidden transform hover:scale-105 transition-all duration-300"
+    >
+      {/* Project Image */}
+      <div className="relative h-48 md:h-64 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10" />
+        <img 
+          src={project.image} 
+          alt={project.title}
+          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+        />
+        
+        {/* Tech Stack Pills */}
+        <div className="absolute top-4 right-4 z-20 flex flex-wrap gap-2 justify-end">
+          {project.technologies.map((tech, i) => (
+            <span 
+              key={i}
+              className="px-2 py-1 text-xs bg-gray-900/80 text-gray-300 rounded-full backdrop-blur-sm"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Project Info */}
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-2 text-white group-hover:text-green-400 transition-colors">
+          {project.title}
+        </h3>
+        <p className="text-gray-400 text-sm mb-4">
+          {project.description}
+        </p>
+        
+        {/* Project Links */}
+        <div className="flex gap-4">
+          <a 
+            href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-gradient-to-r from-orange-500 to-green-500 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+          >
+            Live Demo
+          </a>
+          <a 
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border border-green-500 rounded-lg text-sm font-medium hover:bg-green-500/20 transition-colors"
+          >
+            View Code
+          </a>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+// Loading Skeleton Component
+const ProjectSkeleton = () => (
+  <div className="bg-gray-800 rounded-xl overflow-hidden animate-pulse">
+    <div className="h-48 md:h-64 bg-gray-700" />
+    <div className="p-6">
+      <div className="h-6 bg-gray-700 rounded w-3/4 mb-4" />
+      <div className="h-4 bg-gray-700 rounded w-full mb-2" />
+      <div className="h-4 bg-gray-700 rounded w-5/6 mb-4" />
+      <div className="flex gap-4">
+        <div className="h-10 bg-gray-700 rounded w-24" />
+        <div className="h-10 bg-gray-700 rounded w-24" />
+      </div>
+    </div>
+  </div>
+);
+
+// Updated Featured Projects Section
+const FeaturedProjects = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    // Simulate loading data
+    setTimeout(() => {
+      setProjects([
+        {
+          title: "Project 1",
+          description: "A brief description of your amazing project goes here. Highlight the key features and technologies used.",
+          image: "path/to/image1.jpg",
+          technologies: ["React", "Node.js", "MongoDB"],
+          liveLink: "#",
+          githubLink: "#"
+        },
+        // Add more projects...
+      ]);
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+  return (
+    <div id="projects" className="container mx-auto px-4 py-16 min-h-screen">
+      <motion.h2 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text"
+      >
+        Featured Projects
+      </motion.h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {isLoading ? (
+          // Show loading skeletons
+          [...Array(3)].map((_, i) => <ProjectSkeleton key={i} />)
+        ) : (
+          // Show actual projects
+          projects.map((project, index) => (
+            <ProjectCard key={index} project={project} index={index} />
+          ))
+        )}
+      </div>
+    </div>
+  );
+};
 
 class Home extends Component {
     render() {
@@ -76,14 +205,7 @@ class Home extends Component {
                 </div>
 
                 {/* Featured Projects Section */}
-                <div id="projects" className="container mx-auto px-4 py-16 min-h-screen">
-                    <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 text-center bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text transform hover:scale-105 transition-all duration-300 animate-slideDown px-4">
-                        Featured Projects
-                    </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 animate-fadeIn px-4 sm:px-6 lg:px-8">
-                        {/* Project cards would go here */}
-                    </div>
-                </div>
+                <FeaturedProjects />
 
                 {/* Technologies Section */}
                 <div className="container mx-auto px-4 py-16 min-h-screen">
