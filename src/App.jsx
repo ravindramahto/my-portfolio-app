@@ -9,6 +9,7 @@ import About from './components/pages/About'
 import Skills from './components/pages/Skills'
 import Education from './components/pages/Education'
 import Contact from './components/pages/Contact' 
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   )

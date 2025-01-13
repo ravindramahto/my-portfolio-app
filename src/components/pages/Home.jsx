@@ -242,7 +242,116 @@ class Home extends Component {
             Technologies I Work With
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 animate-fadeIn">
-            {/* Technology icons would go here */}
+            {/* Frontend Technologies */}
+           
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <div className="flex items-center gap-2 mb-2 group">
+                <i className="fas fa-code text-4xl bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent transition-all duration-300 group-hover:from-blue-500 group-hover:to-purple-500"></i>
+                <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent transition-all duration-300 group-hover:from-blue-500 group-hover:to-purple-500">
+                  Technologies
+                </span>
+              </div>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-react text-4xl text-blue-400 mb-2"></i>
+              <span className="text-sm">React</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-js text-4xl text-yellow-400 mb-2"></i>
+              <span className="text-sm">JavaScript</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+              <span className="text-sm">HTML5</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+              <span className="text-sm">CSS3</span>
+            </motion.div>
+
+            {/* Backend Technologies */}
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+              <span className="text-sm">Node.js</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-php text-4xl text-purple-400 mb-2"></i>
+              <span className="text-sm">PHP</span>
+            </motion.div>
+
+            {/* Database & Tools */}
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fas fa-database text-4xl text-blue-300 mb-2"></i>
+              <span className="text-sm">MySQL</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-git-alt text-4xl text-orange-600 mb-2"></i>
+              <span className="text-sm">Git</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-docker text-4xl text-blue-400 mb-2"></i>
+              <span className="text-sm">Docker</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-aws text-4xl text-yellow-500 mb-2"></i>
+              <span className="text-sm">AWS</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-bootstrap text-4xl text-purple-500 mb-2"></i>
+              <span className="text-sm">Bootstrap</span>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <i className="fab fa-sass text-4xl text-pink-500 mb-2"></i>
+              <span className="text-sm">Sass</span>
+            </motion.div>
           </div>
         </div>
       </div>
