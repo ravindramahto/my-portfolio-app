@@ -1,25 +1,32 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <div className="social-links">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="social-icon" />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="social-icon" />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="social-icon" />
-          </a>
-        </div>
-        <div className="footer-text">
-          <p>Made with <FaHeart className="heart-icon" /> by Your Name</p>
-          <p className="copyright">© {new Date().getFullYear()} All Rights Reserved</p>
+    <footer className="bg-gray-800 text-white py-8 w-full fixed bottom-0">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center space-y-4">
+          {/* Social Links */}
+          <div className="flex space-x-6">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">
+              <FaGithub size={24} />
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">
+              <FaLinkedin size={24} />
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">
+              <FaTwitter size={24} />
+            </a>
+            <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">
+              <FaInstagram size={24} />
+            </a>
+          </div>
+
+          {/* Copyright */}
+          <p className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} Ravindra Mahto. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
