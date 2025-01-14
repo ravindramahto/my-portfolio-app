@@ -38,7 +38,7 @@ class Education extends Component {
                                 </div>
                                 <div className="w-full md:w-3/4">
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
-                                    Master in Computer Applications (MCA) 
+                                    Master In Computer Applications (MCA) 
                                     </h2>
                                     <h3 className="text-xl text-gray-300 mb-2"> Dr. CV Raman University,Bilaspur,C.G. </h3>
                                     <p className="text-gray-400 mb-4">2017 - 2020</p>
@@ -62,7 +62,7 @@ class Education extends Component {
                                 </div>
                                 <div className="w-full md:w-3/4">
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
-                                    Bachelor in Computer Applications (BCA)
+                                    Bachelor In Computer Applications (BCA)
                                     </h2>
                                     <h3 className="text-xl text-gray-300 mb-2">Dr. CV Raman University,Bilaspur,C.G.</h3>
                                     <p className="text-gray-400 mb-4">2014 - 2017</p>
@@ -86,10 +86,10 @@ class Education extends Component {
                                 </div>
                                 <div className="w-full md:w-3/4">
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-green-500 to-orange-500 text-transparent bg-clip-text">
-                                        Higher Secondary Education
+                                        Intermediate In Science (12th)
                                     </h2>
-                                    <h3 className="text-xl text-gray-300 mb-2">Science Stream (PCM)</h3>
-                                    <p className="text-gray-400 mb-4">2018 - 2020</p>
+                                    <h3 className="text-xl text-gray-300 mb-2"> St. John's Inter College Ranchi,Jharkhand</h3>
+                                    <p className="text-gray-400 mb-4">2012 - 2022</p>
                                     <p className="text-gray-300">
                                         Completed my higher secondary education with distinction in Physics, Chemistry, and Mathematics.
                                         Participated in various science exhibitions and competitions.
