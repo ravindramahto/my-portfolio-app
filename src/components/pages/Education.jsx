@@ -43,7 +43,7 @@ class Education extends Component {
                                     <h3 className="text-xl text-gray-300 mb-2"> Dr. CV Raman University,Bilaspur,C.G. </h3>
                                     <p className="text-gray-400 mb-4">2017 - 2020</p>
                                     <p className="text-gray-300">
-                                        Advanced studies in specialized areas of computer science including Machine Learning, 
+                                        Advanced studies in specialized areas of computer science including  
                                         Artificial Intelligence, and Advanced Software Architecture. Research focused on 
                                         emerging technologies and their practical applications.
                                     </p>
@@ -91,7 +91,7 @@ class Education extends Component {
                                     <h3 className="text-xl text-gray-300 mb-2"> St. John's Inter College Ranchi,Jharkhand</h3>
                                     <p className="text-gray-400 mb-4">2012 - 2022</p>
                                     <p className="text-gray-300">
-                                        Completed my higher secondary education with distinction in Physics, Chemistry, and Mathematics.
+                                        Completed my higher secondary education in Physics, Chemistry, and Mathematics.
                                         Participated in various science exhibitions and competitions.
                                     </p>
                                 </div>
