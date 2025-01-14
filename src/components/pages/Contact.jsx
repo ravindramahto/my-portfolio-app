@@ -19,6 +19,14 @@ class Contact extends Component {
                     >
                         Get In Touch
                     </motion.h1>
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                        <div className="w-full md:w-1/2">
+                            <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
+                            <p className="text-gray-300 mb-4">
+                                If you have any questions or need assistance, please feel free to contact me using the information below.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
