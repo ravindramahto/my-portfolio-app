@@ -4,6 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
+    <> 
     <footer className="bg-gray-800 text-white py-8 w-full fixed bottom-0">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-4">
@@ -31,6 +32,7 @@ const Footer = () => {
      
       </div>
     </footer>
+    </>
   );
 };
 
