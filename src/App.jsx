@@ -10,11 +10,23 @@ import Skills from './components/pages/Skills'
 import Education from './components/pages/Education'
 import Contact from './components/pages/Contact' 
 import Footer from './components/Footer/Footer'
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <>
+      <Toaster 
+        position="top-right"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: '#333',
+            color: '#fff',
+          },
+        }}
+      />
       <Router>
       <div className="pt-4">
         <Header />
@@ -28,6 +40,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </>
   )
 }
 
