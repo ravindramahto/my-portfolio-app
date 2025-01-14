@@ -47,24 +47,24 @@ const About = () => {
             <div>
               <h2 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">Who I Am</h2>
               <p className="text-gray-300 bg-gradient-to-r from-orange-500/10 to-green-500/10 p-3 rounded-lg">
-                A passionate Full Stack Developer based in [Your Location], with a strong focus on creating efficient and user-friendly web applications.
+                A passionate Full Stack Developer based in Ranchi Jharkhand, with a strong focus on creating efficient and user-friendly web applications.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">My Journey</h2>
               <p className="text-gray-300 bg-gradient-to-r from-orange-500/10 to-green-500/10 p-3 rounded-lg">
-                Started programming in [Year], I've worked on various projects ranging from [types of projects]. My experience includes [specific experiences].
+                Started programming in 2019, I've worked on various projects ranging from Hospital Management System to Hotel Management  Website and many more Software Development Projects. My experience includes 4 years of experience in Software Development.
               </p>
             </div>
           </motion.div>
         </div>
 
         {/* Personal Interests */}
-        <div>
+        <div className="mt-10">
           <h2 className="text-2xl font-semibold mb-2">Beyond Coding</h2>
           <p className="text-gray-300">
-            When I'm not coding, you'll find me [your interests/hobbies]. I'm also passionate about [other relevant interests].
+            When I'm not coding, you'll find me listening Music, watching Movies and Playing Games. I'm also passionate about Reading Books and seeing new places.
           </p>
         </div>
 
