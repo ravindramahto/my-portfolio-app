@@ -34,7 +34,7 @@ class Education extends Component {
                         >
                             <div className="flex flex-col md:flex-row items-start gap-6">
                                 <div className="w-full md:w-1/4 flex items-center justify-center">
-                                    <i className="fas fa-user-graduate text-8xl text-orange-500 transform hover:scale-110 transition-transform duration-500"></i>
+                                    <FaUniversity className="text-8xl text-orange-500 transform hover:scale-110 transition-transform duration-500" />
                                 </div>
                                 <div className="w-full md:w-3/4">
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
@@ -57,14 +57,8 @@ class Education extends Component {
                             className="bg-gradient-to-r from-orange-500/10 to-green-500/10 rounded-xl p-6 shadow-xl backdrop-blur-sm"
                         >
                             <div className="flex flex-col md:flex-row items-start gap-6">
-                                <div className="w-full md:w-1/4">
-                                    <div className="aspect-video rounded-lg overflow-hidden">
-                                        <img 
-                                            src="https://source.unsplash.com/random/800x600/?university" 
-                                            alt="College"
-                                            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                                        />
-                                    </div>
+                                <div className="w-full md:w-1/4 flex items-center justify-center">
+                                    <FaGraduationCap className="text-8xl text-orange-500 transform hover:scale-110 transition-transform duration-500" />
                                 </div>
                                 <div className="w-full md:w-3/4">
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
@@ -87,14 +81,8 @@ class Education extends Component {
                             className="bg-gradient-to-r from-green-500/10 to-orange-500/10 rounded-xl p-6 shadow-xl backdrop-blur-sm"
                         >
                             <div className="flex flex-col md:flex-row items-start gap-6">
-                                <div className="w-full md:w-1/4">
-                                    <div className="aspect-video rounded-lg overflow-hidden">
-                                        <img 
-                                            src="https://source.unsplash.com/random/800x600/?school" 
-                                            alt="High School"
-                                            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                                        />
-                                    </div>
+                                <div className="w-full md:w-1/4 flex items-center justify-center">
+                                    <FaSchool className="text-8xl text-orange-500 transform hover:scale-110 transition-transform duration-500" />
                                 </div>
                                 <div className="w-full md:w-3/4">
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-green-500 to-orange-500 text-transparent bg-clip-text">
