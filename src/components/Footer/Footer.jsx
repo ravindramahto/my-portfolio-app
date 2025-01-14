@@ -28,6 +28,18 @@ const Footer = () => {
             © {new Date().getFullYear()} Ravindra Mahto. All rights reserved.
           </p>
         </div>
+      <style>
+        {`
+          .social-icon {
+            color: #4ade80;
+            transition: transform 0.3s ease;
+          }
+          .social-icon:hover {
+            transform: scale(1.2);
+            color: #22c55e;
+          }
+        `}
+      </style>
       </div>
     </footer>
   );
