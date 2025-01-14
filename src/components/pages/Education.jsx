@@ -97,6 +97,29 @@ class Education extends Component {
                                 </div>
                             </div>
                         </motion.div>
+                        {/* School Education */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            className="bg-gradient-to-r from-orange-500/10 to-green-500/10 rounded-xl p-6 shadow-xl backdrop-blur-sm"
+                        >
+                            <div className="flex flex-col md:flex-row items-start gap-6">
+                                <div className="w-full md:w-1/4 flex items-center justify-center">
+                                    <FaSchool className="text-8xl text-orange-500 transform hover:scale-110 transition-transform duration-500" />
+                                </div>
+                                <div className="w-full md:w-3/4">
+                                    <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
+                                        Secondary School (10th)
+                                    </h2>
+                                    <h3 className="text-xl text-gray-300 mb-2">St. John's High School Ranchi,Jharkhand</h3>
+                                    <p className="text-gray-400 mb-4">2010 - 2012</p>
+                                    <p className="text-gray-300">
+                                        Completed secondary education with excellent academic performance.
+                                        Actively participated in extracurricular activities and sports events.
+                                    </p>
+                                </div>
+                            </div>
+                        </motion.div>
 
                         {/* Skills Section */}
                         <motion.div
