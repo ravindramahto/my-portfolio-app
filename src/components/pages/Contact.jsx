@@ -150,7 +150,7 @@ class Contact extends Component {
                                         <motion.a
                                             whileHover={{ scale: 1.1 }}
                                             whileTap={{ scale: 0.9 }}
-                                            href="https://github.com"
+                                            href="https://github.com/ravindramahto"
                                             target="_blank"
                                             className="bg-gradient-to-r from-orange-500 to-green-500 p-3 rounded-full hover:opacity-90 transition-all duration-300"
                                         >
@@ -161,7 +161,7 @@ class Contact extends Component {
                                         <motion.a
                                             whileHover={{ scale: 1.1 }}
                                             whileTap={{ scale: 0.9 }}
-                                            href="https://linkedin.com"
+                                            href="https://www.linkedin.com/in/ravindra-mahto-706774149/"
                                             target="_blank"
                                             className="bg-gradient-to-r from-orange-500 to-green-500 p-3 rounded-full hover:opacity-90 transition-all duration-300"
                                         >
