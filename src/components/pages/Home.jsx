@@ -146,7 +146,7 @@ class Home extends Component {
             </p>
             <div className="flex space-x-6 animate-fadeIn">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/ravindramahto"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transform hover:scale-125 transition-all duration-300"
@@ -164,7 +164,7 @@ class Home extends Component {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/ravindra-mahto-706774149/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transform hover:scale-125 transition-all duration-300"
