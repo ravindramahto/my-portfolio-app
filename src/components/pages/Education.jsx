@@ -111,8 +111,8 @@ class Education extends Component {
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
                                         Secondary School (10th)
                                     </h2>
-                                    <h3 className="text-xl text-gray-300 mb-2">St. John's High School Ranchi,Jharkhand</h3>
-                                    <p className="text-gray-400 mb-4">2010 - 2012</p>
+                                    <h3 className="text-xl text-gray-300 mb-2">St. Mother Teresa High School Neori Vikas,Ranchi,Jharkhand</h3>
+                                    <p className="text-gray-400 mb-4">2012</p>
                                     <p className="text-gray-300">
                                         Completed secondary education with excellent academic performance.
                                         Actively participated in extracurricular activities and sports events.
