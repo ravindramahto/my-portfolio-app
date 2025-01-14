@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { motion } from 'framer-motion'; 
+import { FaGraduationCap, FaUniversity, FaSchool } from 'react-icons/fa';   
+    
 class Education extends Component {
     render() {
         return (
