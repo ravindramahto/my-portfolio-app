@@ -40,8 +40,8 @@ class Education extends Component {
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
                                         Master of Technology
                                     </h2>
-                                    <h3 className="text-xl text-gray-300 mb-2">Computer Science & Engineering</h3>
-                                    <p className="text-gray-400 mb-4">2024 - 2026</p>
+                                    <h3 className="text-xl text-gray-300 mb-2"> Master in Computer Applications (MCA) </h3>
+                                    <p className="text-gray-400 mb-4">2017 - 2020</p>
                                     <p className="text-gray-300">
                                         Advanced studies in specialized areas of computer science including Machine Learning, 
                                         Artificial Intelligence, and Advanced Software Architecture. Research focused on 
@@ -64,8 +64,8 @@ class Education extends Component {
                                     <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-500 to-green-500 text-transparent bg-clip-text">
                                         Bachelor of Technology
                                     </h2>
-                                    <h3 className="text-xl text-gray-300 mb-2">Computer Science & Engineering</h3>
-                                    <p className="text-gray-400 mb-4">2020 - 2024</p>
+                                    <h3 className="text-xl text-gray-300 mb-2">Bachelor in Computer Applications (BCA)</h3>
+                                    <p className="text-gray-400 mb-4">2014 - 2017</p>
                                     <p className="text-gray-300">
                                         Pursuing my degree with a focus on software development, algorithms, and modern web technologies.
                                         Notable coursework includes Data Structures, Database Management, and Web Development.
