@@ -6,10 +6,10 @@ const About = () => {
     <div className="min-h-screen w-screen bg-gray-900 mb-5 text-white py-20 px-4 overflow-x-hidden">
       <div className="container mx-auto max-w-4xl">
         {/* Header */}
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: -50 }}
-          animate={{ 
-            opacity: 1, 
+          animate={{
+            opacity: 1,
             y: 0,
             transition: {
               duration: 0.8,
@@ -24,22 +24,22 @@ const About = () => {
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Profile Image */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             className="relative"
           >
             <div className="aspect-square rounded-2xl overflow-hidden">
-              <img 
+              <img
                 src={new URL('../../assets/Ravi.png', import.meta.url).href}
-                alt="Ravindra Mahto" 
+                alt="Ravindra Mahto"
                 className="w-full h-full object-cover"
               />
             </div>
           </motion.div>
 
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             className="space-y-6"
@@ -69,13 +69,13 @@ const About = () => {
         </div>
 
         {/* Call to Action */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mt-12"
         >
-          <a 
-            href="/contact" 
+          <a
+            href="/contact"
             className="inline-block mb-10 bg-gradient-to-r from-orange-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             Let's Work Together
